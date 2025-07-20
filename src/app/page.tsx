@@ -8,8 +8,15 @@ import rocketSvg from "../assets/rocket.svg";
 import growIcon from "../assets/grow.svg";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { Alert } from "@/components/alert";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+  const [status, setStatus] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
   return (
     <div>
       {/* HERO SECTION */}
@@ -268,19 +275,37 @@ export default function Home() {
               className="max-w-2xl mx-auto"
               onSubmit={async (event: React.FormEvent<HTMLFormElement>) => {
                 event.preventDefault();
-                const formData = new FormData(event.currentTarget);
-                const formDataObj = Object.fromEntries(formData.entries());
-                await fetch("/forms.html", {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/x-www-form-urlencoded",
-                  },
-                  body: new URLSearchParams(
-                    formDataObj as unknown as Record<string, string>
-                  ).toString(),
-                });
+                try {
+                  const formData = new FormData(event.currentTarget);
+                  const formDataObj = formData;
+                  const res = await fetch("/__forms.html", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                    body: new URLSearchParams(
+                      formDataObj as unknown as Record<string, string>
+                    ).toString(),
+                  });
+
+                  if (res.status === 200) {
+                    setStatus("ok");
+                  } else {
+                    setStatus("error");
+                    setError(`${res.status} ${res.statusText}`);
+                  }
+                } catch (e) {
+                  setStatus("error");
+                  setError(`${e}`);
+                } finally {
+                  setTimeout(() => {
+                    setStatus(null);
+                    setError(null);
+                  }, 5000);
+                }
               }}
             >
+              <input type="hidden" name="contact" value="contact" />
               <div className="mb-8">
                 <label htmlFor="name" className="text-white font-semibold">
                   Your Name
@@ -325,6 +350,8 @@ export default function Home() {
                 value="Send a Message"
                 className="w-full p-4 bg-[#F4B400] mt-12 rounded-md text-white font-semibold cursor-pointer hover:bg-[#F4B400]/90 transition duration-300 ease-in-out"
               />
+              {status === "ok" && <Alert type="success">Submitted</Alert>}
+              {status === "error" && <Alert type="error">{error}</Alert>}
             </form>
           </section>
         </div>
