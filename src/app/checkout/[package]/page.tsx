@@ -63,7 +63,6 @@ export default function Checkout() {
 
   const [course, setCourse] = useState<Course | null>(null);
   const [showSuccessModal, setShowSuccessModal] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",

@@ -80,8 +80,8 @@ export default function Contact() {
               <p
                 className={`${styles.paragraph} text-[#213053] max-w-[600px] mx-auto`}
               >
-                Get in touch with our team. We're here to help you with your
-                digital transformation journey.
+                Get in touch with our team. We&apos;re here to help you with
+                your digital transformation journey.
               </p>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Contact() {
                 Email Us
               </h3>
               <p className={`${styles.paragraph} mb-2`}>
-                Send us an email and we'll get back to you within 24 hours.
+                Send us an email and we&apos;ll get back to you within 24 hours.
               </p>
               <a
                 href="mailto:hello@stratdigital.com"
@@ -164,8 +164,8 @@ export default function Contact() {
               </h2>
               <p className="text-center text-gray-300 mt-4 max-w-2xl mx-auto">
                 Have a project in mind? Want to learn more about our services?
-                Fill out the form below and we'll get back to you as soon as
-                possible.
+                Fill out the form below and we&apos;ll get back to you as soon
+                as possible.
               </p>
             </div>
 
@@ -180,8 +180,8 @@ export default function Contact() {
                     </span>
                   </div>
                   <p className="text-sm mt-1">
-                    Thank you for contacting us. We'll get back to you within 24
-                    hours.
+                    Thank you for contacting us. We&apos;ll get back to you
+                    within 24 hours.
                   </p>
                 </div>
               </div>
@@ -329,9 +329,9 @@ export default function Contact() {
                 Ready to Get Started?
               </h2>
               <p className={`${styles.paragraph} mb-8 max-w-2xl mx-auto`}>
-                Let's discuss your project and see how we can help you achieve
-                your digital goals. Book a free consultation with our team
-                today.
+                Let&apos;s discuss your project and see how we can help you
+                achieve your digital goals. Book a free consultation with our
+                team today.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <button className="bg-[#F4B400] flex flex-row items-center justify-center py-4 px-8 rounded-md cursor-pointer hover:bg-[#F4B400]/90 transition duration-300 ease-in-out">
