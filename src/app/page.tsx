@@ -1,3 +1,4 @@
+"use client";
 import styles from "@/styles";
 import woman from "../assets/woman.png";
 import arrowRight from "../assets/arrow-right.svg";
@@ -264,9 +265,21 @@ export default function Home() {
             </div>
             <form
               name="contact"
-              method="POST"
-              data-netlify="true"
               className="max-w-2xl mx-auto"
+              onSubmit={async (event: React.FormEvent<HTMLFormElement>) => {
+                event.preventDefault();
+                const formData = new FormData(event.currentTarget);
+                const formDataObj = Object.fromEntries(formData.entries());
+                await fetch("/forms.html", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                  },
+                  body: new URLSearchParams(
+                    formDataObj as unknown as Record<string, string>
+                  ).toString(),
+                });
+              }}
             >
               <div className="mb-8">
                 <label htmlFor="name" className="text-white font-semibold">
