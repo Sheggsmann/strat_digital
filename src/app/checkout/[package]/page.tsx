@@ -15,6 +15,7 @@ interface Course {
   id: number;
   title: string;
   price: string;
+  price_usd: string;
 }
 
 interface FormData {
@@ -42,17 +43,20 @@ const courses: Course[] = [
   {
     id: 1,
     title: "FinTech Compliance",
-    price: "40,000",
+    price: "225,000",
+    price_usd: "150",
   },
   {
     id: 2,
     title: "Digital Marketing Bootcamp",
-    price: "50,000",
+    price: "300,000",
+    price_usd: "200",
   },
   {
     id: 3,
     title: "UI/UX Crash Course",
-    price: "35,000",
+    price: "375,000",
+    price_usd: "250",
   },
 ];
 
@@ -188,7 +192,7 @@ export default function Checkout() {
                 </h3>
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-[#213053]">
-                    ₦{course.price}
+                    ${course.price_usd}
                   </span>
                 </div>
               </div>
@@ -196,11 +200,11 @@ export default function Checkout() {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Course Fee</span>
-                  <span className="font-semibold">₦{course.price}</span>
+                  <span className="font-semibold">${course.price_usd}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Processing Fee</span>
-                  <span className="font-semibold">₦0</span>
+                  <span className="font-semibold">$0</span>
                 </div>
                 <div className="border-t border-gray-200 pt-3">
                   <div className="flex justify-between">
@@ -208,7 +212,7 @@ export default function Checkout() {
                       Total
                     </span>
                     <span className="text-lg font-bold text-[#213053]">
-                      ₦{course.price}
+                      ${course.price_usd}
                     </span>
                   </div>
                 </div>

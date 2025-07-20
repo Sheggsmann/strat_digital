@@ -8,7 +8,8 @@ export default function Pricing() {
     {
       id: 1,
       title: "FinTech Compliance",
-      price: "40,000",
+      price: "225,000",
+      price_usd: "150",
       duration: "2 weeks",
       description:
         "Learn regulatory compliance, risk management, and legal frameworks essential for FinTech operations.",
@@ -27,7 +28,8 @@ export default function Pricing() {
     {
       id: 2,
       title: "Digital Marketing Bootcamp",
-      price: "50,000",
+      price: "300,000",
+      price_usd: "200",
       duration: "4 weeks",
       description:
         "Master digital marketing strategies, social media management, SEO, and analytics to grow your business online.",
@@ -46,7 +48,8 @@ export default function Pricing() {
     {
       id: 3,
       title: "UI/UX Crash Course",
-      price: "35,000",
+      price: "375,000",
+      price_usd: "250",
       duration: "2 weeks",
       description:
         "Design user-friendly interfaces and create exceptional user experiences with modern design principles.",
@@ -104,7 +107,7 @@ export default function Pricing() {
                   </h3>
                   <div className="mb-4">
                     <span className="text-4xl font-bold text-[#213053]">
-                      ₦{plan.price}
+                      ${plan.price_usd}
                     </span>
                   </div>
                   <div className="inline-flex items-center bg-[#EBF5FF] px-3 py-1 rounded-full">

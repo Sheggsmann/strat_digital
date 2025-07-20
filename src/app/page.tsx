@@ -136,7 +136,7 @@ export default function Home() {
 
             <div className="flex flex-col gap-4 mt-8 px-4">
               <div className="flex flex-row flex-wrap md:flex-nowrap mb-12">
-                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-12">
+                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-2 md:gap-12">
                   <h3 className="font-semibold text-[#2E91FF] text-base">
                     01.
                   </h3>
@@ -147,7 +147,7 @@ export default function Home() {
                 <div className="mt-4 md:mt-auto flex-1 ">
                   <p>A modular payment gateway for seamless transactions</p>{" "}
                 </div>
-                <div className="flex flex-row items-end">
+                <div className="hidden md:flex flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
@@ -156,7 +156,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-row flex-wrap md:flex-nowrap mb-12">
-                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-12">
+                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-2 md:gap-12">
                   <h3 className="font-semibold text-[#2E91FF] text-base">
                     02.
                   </h3>
@@ -167,7 +167,7 @@ export default function Home() {
                 <div className="mt-4 md:mt-auto flex-1 ">
                   <p>White-label wallet infrastructure</p>
                 </div>
-                <div className="flex flex-row items-end">
+                <div className="hidden md:flex flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
@@ -176,7 +176,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-row flex-wrap md:flex-nowrap mb-12">
-                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-12">
+                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-2 md:gap-12">
                   <h3 className="font-semibold text-[#2E91FF] text-base">
                     03.
                   </h3>
@@ -187,7 +187,7 @@ export default function Home() {
                 <div className="mt-4 md:mt-auto flex-1 ">
                   <p>Hosted checkout pages for easier customer conversion</p>
                 </div>
-                <div className="flex flex-row items-end">
+                <div className="hidden md:flex flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
@@ -196,7 +196,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-row flex-wrap md:flex-nowrap mb-12">
-                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-12">
+                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-2 md:gap-12">
                   <h3 className="font-semibold text-[#2E91FF] text-base">
                     04.
                   </h3>
@@ -207,7 +207,7 @@ export default function Home() {
                 <div className="mt-4 md:mt-auto flex-1 ">
                   <p>In-house creative and digital advertising support</p>
                 </div>
-                <div className="flex flex-row items-end">
+                <div className="hidden md:flex flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
@@ -216,7 +216,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-row flex-wrap md:flex-nowrap mb-12">
-                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-12">
+                <div className="w-[100%] md:w-[300px] flex flex-row items-center gap-2 md:gap-12">
                   <h3 className="font-semibold text-[#2E91FF] text-base">
                     05.
                   </h3>
@@ -230,7 +230,7 @@ export default function Home() {
                     professionals
                   </p>
                 </div>
-                <div className="flex flex-row items-end">
+                <div className="hidden md:flex flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
@@ -262,7 +262,12 @@ export default function Home() {
               </h2>
               <p></p>
             </div>
-            <div className="max-w-2xl mx-auto">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              className="max-w-2xl mx-auto"
+            >
               <div className="mb-8">
                 <label htmlFor="name" className="text-white font-semibold">
                   Your Name
@@ -307,7 +312,7 @@ export default function Home() {
                 value="Send a Message"
                 className="w-full p-4 bg-[#F4B400] mt-12 rounded-md text-white font-semibold cursor-pointer hover:bg-[#F4B400]/90 transition duration-300 ease-in-out"
               />
-            </div>
+            </form>
           </section>
         </div>
       </div>
