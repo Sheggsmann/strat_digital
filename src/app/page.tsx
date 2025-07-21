@@ -301,6 +301,7 @@ export default function Home() {
                   setTimeout(() => {
                     setStatus(null);
                     setError(null);
+                    router.push("/");
                   }, 5000);
                 }
               }}
