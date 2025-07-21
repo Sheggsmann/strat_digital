@@ -155,7 +155,7 @@ export default function Home() {
                 <div className="mt-4 md:mt-auto flex-1 ">
                   <p>A modular payment gateway for seamless transactions</p>{" "}
                 </div>
-                <div className="hidden md:flex flex-row items-end">
+                <div className="hidden flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
@@ -175,7 +175,7 @@ export default function Home() {
                 <div className="mt-4 md:mt-auto flex-1 ">
                   <p>White-label wallet infrastructure</p>
                 </div>
-                <div className="hidden md:flex flex-row items-end">
+                <div className="hidden flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
@@ -195,7 +195,7 @@ export default function Home() {
                 <div className="mt-4 md:mt-auto flex-1 ">
                   <p>Hosted checkout pages for easier customer conversion</p>
                 </div>
-                <div className="hidden md:flex flex-row items-end">
+                <div className="hidden flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
@@ -215,7 +215,7 @@ export default function Home() {
                 <div className="mt-4 md:mt-auto flex-1 ">
                   <p>In-house creative and digital advertising support</p>
                 </div>
-                <div className="hidden md:flex flex-row items-end">
+                <div className="hidden flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
@@ -238,7 +238,7 @@ export default function Home() {
                     professionals
                   </p>
                 </div>
-                <div className="hidden md:flex flex-row items-end">
+                <div className="hidden flex-row items-end">
                   <div className="w-[20px] h-[3px] mr-4 bg-[#F4B400]"></div>
                   <Link href="/#" className="text-xs font-semibold">
                     LEARN MORE
