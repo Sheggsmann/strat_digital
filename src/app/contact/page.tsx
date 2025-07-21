@@ -324,7 +324,7 @@ export default function Contact() {
       </div> */}
 
       {/* CTA Section */}
-      <div className="bg-[#F9FAFB]">
+      {/* <div className="bg-[#F9FAFB]">
         <div className={`${styles.boxWidth} mx-auto`}>
           <section className={`${styles.paddingY} ${styles.paddingX}`}>
             <div className="text-center">
@@ -342,16 +342,11 @@ export default function Contact() {
                     Book a Free Consultation
                   </span>
                 </button>
-                {/* <button className="flex flex-row items-center justify-center cursor-pointer">
-                  <span className="underline text-gray-600">
-                    View Our Portfolio
-                  </span>
-                </button> */}
               </div>
             </div>
           </section>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
