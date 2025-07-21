@@ -101,7 +101,7 @@ export default function Checkout() {
     reference: new Date().getTime().toString(),
     email: formData.email,
     amount: course ? parseInt(course.price.replace(",", "")) * 100 : 0,
-    publicKey: "pk_test_6226f9d7ae81ef1308cfdfbf4ac3b118eb34f644",
+    publicKey: "pk_live_c75234e7afb1e8c399b382c8b6208fe978b50ee1",
     text: "Complete Payment",
     onSuccess: (reference) => {
       console.log("Payment Successful: ", reference);
