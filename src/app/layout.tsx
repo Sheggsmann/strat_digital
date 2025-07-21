@@ -62,7 +62,7 @@ export default function RootLayout({
             </div>
 
             <div className="flex flex-1">
-              <div className="w-full grid grid-cols-2 md:grid-cols-3">
+              <div className="w-full grid grid-cols-2 gap-4 md:grid-cols-3">
                 <div>
                   <h3 className="font-semibold text-xl">Support</h3>
                   <ul className="mt-4">
@@ -99,8 +99,11 @@ export default function RootLayout({
 
                 <div>
                   <h3 className="font-semibold text-xl">Address</h3>
-                  <p>Lagos, Nigeria</p>
-                  <p className="mt-1">
+                  <p className="mb-4">
+                    No 1B, Adeola Raji Avenue, Atunrase Estate, Gbagada, Lagos
+                    State, Nigeria.
+                  </p>
+                  <p className="mb-2">
                     📞 Phone:{" "}
                     <Link href="tel:+2348129664233">+234 8129664233</Link>
                   </p>

@@ -138,7 +138,10 @@ export default function Contact() {
               <p className={`${styles.paragraph} mb-2`}>
                 Come visit our office for a face-to-face consultation.
               </p>
-              <p className="text-[#F4B400] font-semibold">Lagos, Nigeria</p>
+              <p className="text-[#F4B400] font-semibold">
+                No 1B, Adeola Raji Avenue, Atunrase Estate, Gbagada, Lagos
+                State, Nigeria.
+              </p>
             </div>
           </div>
         </section>
